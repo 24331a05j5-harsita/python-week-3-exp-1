@@ -1,0 +1,15 @@
+import numpy as np
+marks=[5,6,7,2,5,8,9,5,6,10,7,8,2,3,1]
+print("list:",marks)
+array=np.array(marks)
+print("array:",array)
+print("size:",array.size)
+print("datatype:",array.dtype)
+print("shape:",array.shape)
+print("dimension:",array.ndim)
+print("highest marks:",np.max(array))
+print("lowest marks:",np.min(array))
+average=np.mean(array)
+print("class average is:",average)
+print(np.where (array>4,"pass","fail"))
+print("class performance:",np.where(average<5,"below average","above average"))
